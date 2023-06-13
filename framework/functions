@@ -58,3 +58,12 @@ def transformData(dataInput, selection, type):
     else:
       raise ValueError ('Please choose a correct type from: '+ str(types))
   return labels
+  
+  
+  #Define a function to rename the column names, which can be later extended
+def nameColumns(data, type):
+  if type in types:
+    data.columns = (types[type])  
+  else:
+    raise ValueError ('Please choose a correct type from: '+ str(types))
+  return data
