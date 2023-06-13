@@ -67,3 +67,30 @@ def nameColumns(data, type):
   else:
     raise ValueError ('Please choose a correct type from: '+ str(types))
   return data
+
+
+
+
+!python -m pip install nltk==3.5
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
+#Note: As SCIERC test set is already tokenized, there is no requirement to call
+#nltk.word_tokenize
+
+#Define a function to create POS tags
+def posTags(data):
+  global posTagDf
+  columns = list(data)
+  column = 0
+  for i in columns:
+    result = pd.DataFrame(data[column].dropna())
+    result[column] = pd.DataFrame(result[column].apply(nltk.pos_tag))
+    if column == 0:
+      posTagDf = pd.DataFrame(result)
+    else:
+      posTagDf = posTagDf.merge(result, how='left', left_on='doc_key',
+                              right_on='doc_key')
+    column = column + 1
+  return posTagDf
