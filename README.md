@@ -1,36 +1,24 @@
-1. Upload pl-marker-evaluation-script folder to Google Drive to upload to model
-Note: Upload the entire folder pl-marker-evaluation-script and not just the subfolder pl-marker
+2. IMPORT FRAMEWORK DEPENDENCIES ...?
 
-2. Open Final_PL_Marker_Evaluation_Script in new notebook file in Google Colaboratory [Folder: pl-marker ipynb file]
+**PL-Marker Evaluation Scripts**
+1. Ensure evaluation scripts for PL-marker are used following the PL-Marker setup guide: https://github.com/thunlp/PL-Marker#Setup
+2. Import all PL-Marker model dependencies, including the requirement.txt and custom Transformers file https://github.com/thunlp/PL-Marker#Install-dependencies
+3. Ensure the Scibert pre-trained model is imported according to the PL-Marker setup file: https://github.com/thunlp/PL-Marker#Trained-Models
+4. Ensure the Scierc dataset is uploaded https://github.com/thunlp/PL-Marker#download-and-preprocess-the-datasets
+5. Ensure the Runtime type is set to GPU for consistency with the original PL-Marker experiment
+6. Use the PL-Marker QuickStart to evaluate the pre-trained PL-Marker models run_acener.py and  run_re.py for Scierc: https://github.com/thunlp/PL-Marker#quick-start
 
-3. Change runtime in Google Colaboratory [Runtime -> Change Runtime Type -> GPU -> Save]
+**Semantic Text Analysis Framework**
 
-4. Run all cells in application. The following steps within step 4 detail the analysis undertaken.
-Note: You will need to allow access to your google drive account
+**Python**
+1. Import all required functions for the framework (framework/functions)
+2. Undertake analysis on the Scierc dataset distribution (framework/sciercanalysis)
+3. Undertaken confusion matrix analysis for ner and re (framework/confusionmatrices)
+4. Generate POS Tags for Qualitative Data Analysis Software import (framework/posTags)
+5. Transform data and generate .xlsx for Qualitative Data Analysis Software import (framework/qdas/dataTransform)
 
-4a. Evaluate PL-Marker NER and RE models:
-- Import PL-Marker Pre-trained Model by connecting Google Drive
-- Installing PL-Marker NER and RE model dependencies
-- Evaluate SCINER pretained
-- Evaluate SCIRE pretrained
-
-4b. Evaluate SCIERC dataset distribution:
-- Data Analysis - Dataset Analysis [Named Entities, Relations, Further Statistics - Sentences]
-
-4c. Analyse confusion matrices:
-- Data Analysis - RQ1 - Confusion Matrices [NER]
-- Data Analysis - RQ1 - Confusion Matrices [RE]
-
-4d. Generate an .xlsx export for QDAS including POS tags and NER and RE gold labels and predictions:
-- Data Analysis - RQ2 - Qdas Data Formatting
-- NLTK Default Perceptron POS Tags
-- Export to .xlsx file for import to QDAS 
-
-5. Download Qdas.xlsx export from Google Drive pl-marker-evaluation-script/pl-marker/Qdas.xlsx
-
-6. Semantic Text Analysis:
-- Open Nvivo Qualitative Data Analysis Software on WindowsOS.
-
+**Qualitative Data Analysis**
+We used Nvivio (REF) on Windows OS.
 Please note: Not all Nvivo features are present on MacOS:
 Queries will produce different results on Mac as they are not filtered by user.
 Two users annotated relations to generate a Kappa score.
@@ -38,20 +26,21 @@ Two users annotated relations to generate a Kappa score.
 - Filter queries by user (MacOS only)
 For more information see: https://help-nv.qsrinternational.com/20/mac/Content/projects-teamwork/work-with-projects-windows-mac.htm
 
-If annotating SCIERC test set from scratch, import Qdas.xlsx into Nvivo
-Else import Nvivo Semantic Text Analysis WindowsOS.nvp [Folder: QDAS - Semantic Text Analysis - RQ2]
-- A supplementary MacOS version is provided in the same folder
+**Semantic Text Analysis Process**
+1. Import exported .xlsx file into Nvivo
+2. Undertake Text Analysis using the codebooks provided in INSERT REFERENCE TO CODEBOOKS
+Note: We annotated all themes twice to generate a Kappa statistic. The Kappa statistics can be found INSERT.
 
-6a. The SCIERC .xlsx imported annotated dataset is provided under Data -> Files -> SCIERC QDAS Import File - PART-OF & FEATURE-OF
+**Results**
+1. Database statistics can be found in INSERT (Data -> Files -> SCIERC QDAS Import File - PART-OF & FEATURE-OF)
+2. Confusion matrices can be found in INSERT
+3. The Nvivo file for the Semantic Text Analysis annotations undertaken in this research can be found in INSERT WINDOW FILE
+- Queries for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Criteria
+- Please note: These results will not match the research when running on MacOS.
+- Query results for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Results
+- Please note: These results will not match the research when running on MacOS.
+- Pearson's Correlation Coefficients must be regenerated at runtime. Please navigate to: Explore -> Diagrams -> Cluster Analysis -> Select codes and click ‘next’ -> Select all codes -> Click ‘Finish’ -> Navigate to ‘Summary’ -> Right-click and ‘Export list’
+- Please note: This feature is not available in MacOS
 
-6b. The codebooks are presented in Organize -> Coding -> Codes [For more information please see Appendix E]
 
-6c. Queries are presented in Explore -> Queries -> Query Criteria
-Please note: These results will not match the research when running on MacOS.
-
-6d. Query results are presented in Explore -> Queries -> Query Results
-Please note: These results will not match the research when running on MacOS.
-
-6e. To generate Pearson’s Correlation Coefficients navigate to:
-Explore -> Diagrams -> Cluster Analysis -> Select codes and click ‘next’ -> Select all codes -> Click ‘Finish’ -> Navigate to ‘Summary’ -> Right-click and ‘Export list’
-Please note: This feature is not available in MacOS
+ADD RESULTS - DATABASE STATISTICS, CONFUSION MATRICES, CORRELATION COEFFICIENT EXPORTS AND THEME COOCCURENCE EXPORTS, VALIDATION QUERY RESULTS, QUERY RESULTS (=THEME COOCCURENCES)
