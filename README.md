@@ -34,7 +34,7 @@ Note: We annotated all themes twice to generate a Kappa statistic. The Kappa sta
 
 **Results**
 1. PL-Marker model F1 scores and standard deviation can be found in results/pl-marker.md
-2. Database statistics can be found in INSERT (Data -> Files -> SCIERC QDAS Import File - PART-OF & FEATURE-OF)
+2. Database statistics can be found in results/sciercStatistics.md (Data -> Files -> SCIERC QDAS Import File - PART-OF & FEATURE-OF)
 3. Confusion matrices can be found in results/confusionMatrices
 4. The Nvivo file for the Semantic Text Analysis annotations undertaken in this research can be found in INSERT WINDOW FILE
 - Queries for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Criteria
