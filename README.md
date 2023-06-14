@@ -42,7 +42,7 @@ Note: We annotated all themes twice to generate a Kappa statistic.
 - Please note: These results will not match the research when running on MacOS.
 - Query results for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Results
 - Please note: These results will not match the research when running on MacOS.
-- Kappa statistics can be found INSERT.
+- Kappa statistics can be found results/kappa.md
 - Pearson's Correlation Coefficients must be regenerated at runtime. Please navigate to: Explore -> Diagrams -> Cluster Analysis -> Select codes and click ‘next’ -> Select all codes -> Click ‘Finish’ -> Navigate to ‘Summary’ -> Right-click and ‘Export list’
 - Please note: This feature is not available in MacOS
 
