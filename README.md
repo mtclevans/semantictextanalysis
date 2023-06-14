@@ -30,7 +30,7 @@ For more information see: https://help-nv.qsrinternational.com/20/mac/Content/pr
 **Semantic Text Analysis Process**
 1. Import exported .xlsx file into Nvivo
 2. Undertake Text Analysis using the codebooks provided in framework/codebooks.md
-Note: We annotated all themes twice to generate a Kappa statistic. The Kappa statistics can be found INSERT.
+Note: We annotated all themes twice to generate a Kappa statistic.
 
 **Results**
 1. PL-Marker model F1 scores and standard deviation can be found in results/pl-marker.md
@@ -41,6 +41,7 @@ Note: We annotated all themes twice to generate a Kappa statistic. The Kappa sta
 - Please note: These results will not match the research when running on MacOS.
 - Query results for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Results
 - Please note: These results will not match the research when running on MacOS.
+- Kappa statistics can be found INSERT.
 - Pearson's Correlation Coefficients must be regenerated at runtime. Please navigate to: Explore -> Diagrams -> Cluster Analysis -> Select codes and click ‘next’ -> Select all codes -> Click ‘Finish’ -> Navigate to ‘Summary’ -> Right-click and ‘Export list’
 - Please note: This feature is not available in MacOS
 
