@@ -1,5 +1,5 @@
 2. IMPORT FRAMEWORK DEPENDENCIES ...?
-
+![NER Confusion Matrix Recall - Standard Task Formulation](https://github.com/mtclevans/semantictextanalysis/assets/135343954/fc03f067-ac3b-4009-a290-e320f8825acd)
 **PL-Marker Evaluation Scripts**
 1. Ensure evaluation scripts for PL-marker are used following the PL-Marker setup guide: https://github.com/thunlp/PL-Marker#Setup
 2. Import all PL-Marker model dependencies, including the requirement.txt and custom Transformers file https://github.com/thunlp/PL-Marker#Install-dependencies
