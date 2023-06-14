@@ -1,6 +1,4 @@
 2. IMPORT FRAMEWORK DEPENDENCIES ...?
-3. CHANGE FILE TYPES .PY?
-
 
 **PL-Marker Evaluation Scripts**
 1. Ensure evaluation scripts for PL-marker are used following the PL-Marker setup guide: https://github.com/thunlp/PL-Marker#Setup
@@ -13,13 +11,13 @@
 **Semantic Text Analysis Framework**
 
 **Python**
-1. Import all required functions for the framework (framework/functions)
+1. Import all required functions for the framework (framework/functions.py)
 2. Undertake analysis on the Scierc dataset distribution (framework/sciercanalysis)
 3. Undertaken confusion matrix analysis for ner and re (framework/confusionmatrices)
-4. Generate POS Tags for Qualitative Data Analysis Software import (framework/posTags)
-5. Transform data and generate .xlsx for Qualitative Data Analysis Software import (framework/qdas/dataTransform)
+4. Generate POS Tags for Qualitative Data Analysis Software import (framework/posTags.py)
+5. Transform data and generate .xlsx for Qualitative Data Analysis Software import (framework/qdas/dataTransform.py)
 
-**Qualitative Data Analysis**
+**Semantic Text Analysis**
 We used Nvivio (REF) on Windows OS.
 Please note: Not all Nvivo features are present on MacOS:
 Queries will produce different results on Mac as they are not filtered by user.
@@ -27,9 +25,7 @@ Two users annotated relations to generate a Kappa score.
 - Cluster Analysis and Pearson’s Correlation Coefficient (MacOS only)
 - Filter queries by user (MacOS only)
 For more information see: https://help-nv.qsrinternational.com/20/mac/Content/projects-teamwork/work-with-projects-windows-mac.htm
-
-**Semantic Text Analysis Process**
-1. Import exported .xlsx file into Nvivo
+1. Import exported qdas.xlsx file into Nvivo
 2. Undertake Text Analysis using the codebooks provided in framework/codebooks.md
 Note: We annotated all themes twice to generate a Kappa statistic.
 
