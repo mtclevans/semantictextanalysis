@@ -29,7 +29,7 @@ For more information see: https://help-nv.qsrinternational.com/20/mac/Content/pr
 
 **Semantic Text Analysis Process**
 1. Import exported .xlsx file into Nvivo
-2. Undertake Text Analysis using the codebooks provided in INSERT REFERENCE TO CODEBOOKS
+2. Undertake Text Analysis using the codebooks provided in framework/codebooks.md
 Note: We annotated all themes twice to generate a Kappa statistic. The Kappa statistics can be found INSERT.
 
 **Results**
@@ -45,4 +45,4 @@ Note: We annotated all themes twice to generate a Kappa statistic. The Kappa sta
 - Please note: This feature is not available in MacOS
 
 
-ADD RESULTS - DATABASE STATISTICS, CONFUSION MATRICES, CORRELATION COEFFICIENT EXPORTS AND THEME COOCCURENCE EXPORTS, VALIDATION QUERY RESULTS, QUERY RESULTS (=THEME COOCCURENCES)
+ADD RESULTS - CORRELATION COEFFICIENT EXPORTS, THEME COOCCURENCE EXPORTS, VALIDATION QUERY RESULTS, QUERY RESULTS (=THEME COOCCURENCES)
