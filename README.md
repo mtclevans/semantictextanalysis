@@ -1,5 +1,6 @@
 2. IMPORT FRAMEWORK DEPENDENCIES ...?
-![NER Confusion Matrix Recall - Standard Task Formulation](https://github.com/mtclevans/semantictextanalysis/assets/135343954/fc03f067-ac3b-4009-a290-e320f8825acd)
+
+
 **PL-Marker Evaluation Scripts**
 1. Ensure evaluation scripts for PL-marker are used following the PL-Marker setup guide: https://github.com/thunlp/PL-Marker#Setup
 2. Import all PL-Marker model dependencies, including the requirement.txt and custom Transformers file https://github.com/thunlp/PL-Marker#Install-dependencies
@@ -33,7 +34,7 @@ Note: We annotated all themes twice to generate a Kappa statistic. The Kappa sta
 
 **Results**
 1. Database statistics can be found in INSERT (Data -> Files -> SCIERC QDAS Import File - PART-OF & FEATURE-OF)
-2. Confusion matrices can be found in INSERT
+2. Confusion matrices can be found in results/confusionMatrices
 3. The Nvivo file for the Semantic Text Analysis annotations undertaken in this research can be found in INSERT WINDOW FILE
 - Queries for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Criteria
 - Please note: These results will not match the research when running on MacOS.
