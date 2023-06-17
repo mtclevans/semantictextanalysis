@@ -87,6 +87,40 @@ def meanSentences(sentences):
   avgSents = avgSents.mean()
   return avgSents
 
+
+#NER and Gold RE: Define a function to merge gold and prediction dataframes on unique identifier
+#And create a list as input to SkLearn ConfusionMatrix
+def mergeDf (gold, pred, ident, type):
+  #Validation to ensure unique identifier is present in list of idents
+  if ident in idents:
+    print('Identifier accepted')
+  else:
+    raise ValueError ('Please choose a correct identifier from: '+ str(idents))
+  #Validation to ensure analysis type is in directionary of types
+  if type in types:
+      print('Type accepted')
+  else:
+    raise ValueError ('Please choose a correct type from: '+ str(types.keys()))
+  dfMerge = gold.merge(pred, how='left', left_on=ident, right_on=ident,
+                        suffixes=('_GOLD', '_PRED'), indicator=True,
+                        validate='1:1')
+  if 'right_only' in dfMerge['_merge']:
+    raise Exception ('Incorrect merge. Assess data merge for corrections.')
+  else:
+    global goldList
+    global predList
+    confusionGold = dfMerge[[type + '_type_GOLD']]
+    confusionGold[type + '_type_GOLD'] = \
+    confusionGold[type + '_type_GOLD'].astype(str)
+    goldList = confusionGold[type + '_type_GOLD'].values.tolist()
+    goldList
+    confusionPred = dfMerge[[type + '_type_PRED']]
+    confusionPred[type + '_type_PRED'] = \
+    confusionPred[type + '_type_PRED'].astype(str)
+    predList = confusionPred[type + '_type_PRED'].values.tolist()
+    predList
+  return goldList, predList
+
 #POS Tagging
 
 nltk.download('punkt')
