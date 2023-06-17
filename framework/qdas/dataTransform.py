@@ -30,11 +30,10 @@ qDasNerComplete = pd.merge(qDasNerComplete,qDasRe, how='outer',
 
 
 ##Define a function to transform data RE predictions into .xlsx format
-#A new function is required due to only partial data transformation compared to
-#RE prediction transformation for Confusion Matrix analysis
+#Only partial data transformation compared to RE prediction Confusion Matrix
 #This function can be employed for any .xlsx export required using run_re.py
 
-def transformRePred2 (dataInput):
+def transformReXlsx (dataInput):
   rePreds = pd.DataFrame(dataInput.stack(), columns=['relations'])
   rePreds.reset_index(inplace=True)
   rePreds.drop(['level_0', 'level_1'], axis=1)
@@ -57,7 +56,7 @@ def transformRePred2 (dataInput):
 
 
 #Transform predicted RE labels into appropriate format using defined functions
-qDasRePred = transformRePred2(predResults)
+qDasRePred = transformReXlsx(predResults)
 qDasRePred.index.names = ['abstract', 'sentence no']
 
 
