@@ -19,12 +19,12 @@ reTrainTotals = pd.DataFrame(trainRe.value_counts(subset='Relation_type'),
                               columns = ['Train'])
 
 
-#Merge into all NER totals into one table for train, dev and test
+#Merge into all RE totals into one table for train, dev and test
 reTotals = pd.merge(pd.merge(reTestTotals, reDevTotals, on='Relation_type'),
                      reTrainTotals, on='Relation_type')
 
 
-#Create columns to display % split of NER labels for train, dev and test
+#Create columns to display % split of RE labels for train, dev and test
 reTotals['Dev %'] = (100 * (reTotals.groupby('Relation_type')['Dev']\
                       .transform('sum')) / reTotals['Dev'].sum())
 reTotals['Train %'] = (100 * (reTotals.groupby('Relation_type')['Train']\
@@ -41,5 +41,5 @@ reTotals = reTotals[['Train', 'Train %', 'Dev', 'Dev %', 'Test', 'Test %']]
 reTotals.loc['Total']= reTotals.sum()
 
 
-#Display NER dataset statistics
+#Display RE dataset statistics
 reTotals
