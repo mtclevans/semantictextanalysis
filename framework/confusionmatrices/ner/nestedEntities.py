@@ -9,7 +9,6 @@ nestedStartPred = predNer[predNer.duplicated(['start_ident'], keep=False)]
 
 
 #Create a DataFrame with duplicated nested end tokens - gold entities
-#Print the number of nested entities
 nestedEndGold = goldNer[goldNer.duplicated(['end_ident'], keep=False)]
 print('Total Nested End Tokens Gold Entities: ')
 print(len(nestedEndGold.index))
