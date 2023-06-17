@@ -65,6 +65,27 @@ def nameColumns(data, type):
   return data
 
 
+#Define a function to count the number of sentences in any given file
+def countSentences(inputFile):
+  global sentences
+  global count
+  sentences = pd.DataFrame(inputFile['sentences'].to_list(),
+                           index = inputFile.index)
+  sentences = pd.DataFrame(sentences.stack(), columns=['sentences'])
+  count = sentences.count()
+  return sentences, count
+
+
+#Define a function to calculate the mean number of sentences for each abstract
+def meanSentences(sentences):
+  global avgSents
+  avgSents = sentences.drop(['sentences'], axis=1).reset_index()
+  avgSents.columns=['abstract', 'sentences']
+  avgSents = pd.DataFrame(avgSents.value_counts(subset=['abstract']))
+  avgSents = avgSents.sort_values(by='abstract', ascending=True)
+  avgSents = avgSents.mean()
+  return avgSents
+
 #POS Tagging
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
