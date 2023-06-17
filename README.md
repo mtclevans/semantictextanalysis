@@ -1,5 +1,3 @@
-2. IMPORT FRAMEWORK DEPENDENCIES ...?
-
 **PL-Marker Evaluation Scripts**
 The following PL-Marker setup guide provides a pre-trained model and subsequent evaluation scripts: https://github.com/thunlp/PL-Marker#Setup
 1. Import PL-Marker trained models for SciERC NER and RE: https://github.com/thunlp/PL-Marker#Trained-Models
