@@ -34,14 +34,14 @@
 <em>Note: We annotated all themes twice to generate a Kappa statistic.</em>
 
 <h1>Results</h1>
-1. PL-Marker model F1 scores and standard deviation can be found in results/pl-marker.md<br>
-2. Database statistics can be found in results/sciercStatistics.md (Data -> Files -> SCIERC QDAS Import File - PART-OF & FEATURE-OF)<br>
-3. Confusion matrices can be found in results/confusionMatrices<br>
-4. The Nvivo file for the Semantic Text Analysis annotations undertaken in this research can be found in results/Nvivo Semantic Text Analysis WindowsOS.nvp<br>
+1. PL-Marker model F1 scores and standard deviation are presented <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/results/pl-marker.md" target="_blank">here</a><br>
+2. Database statistics are presented <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/results/sciercStatistics.md" target="_blank">here</a><br>
+3. Confusion matrices are presented <a href="https://github.com/mtclevans/semantictextanalysis/tree/main/results/confusionMatrices" target="_blank">here</a><br>
+4. The Nvivo file for the Semantic Text Analysis annotations undertaken in this research is presented <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/results/Nvivo%20Semantic%20Text%20Analysis%20WindowsOS.nvp" target="_blank">here</a><br>
 - Queries for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Criteria<br>
-- Please note: These results will not match the research when running on MacOS.<br>
+- <em>Please note: These results will not match the research when running on MacOS.</em><br>
 - Query results for theme co-occurence and validation are present in this Nvivo file under Explore -> Queries -> Query Results<br>
-- Please note: These results will not match the research when running on MacOS.<br>
-- Kappa statistics can be found results/kappa.md<br>
+- <em>Please note: These results will not match the research when running on MacOS.</em><br>
+- Kappa statistics are presented <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/results/kappa.md" target="_blank">here</a><br>
 - Pearson's Correlation Coefficients must be regenerated at runtime. Please navigate to: Explore -> Diagrams -> Cluster Analysis -> Select codes and click ‘next’ -> Select all codes -> Click ‘Finish’ -> Navigate to ‘Summary’ -> Right-click and ‘Export list’<br>
 - <em>Please note: This feature is not available in MacOS</em>
