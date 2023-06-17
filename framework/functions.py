@@ -88,6 +88,7 @@ def meanSentences(sentences):
   return avgSents
 
 #POS Tagging
+
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 #Note: As SCIERC test set is already tokenized, there is no requirement to call
