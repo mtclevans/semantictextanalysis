@@ -39,7 +39,7 @@ nerTotals = pd.merge(pd.merge(nerTestTotals, nerDevTotals, on='Entity_type'),
                      nerTrainTotals, on='Entity_type')
 
 
-#Set precision to no decimal places complete entities and relations
+#Set precision to no decimal places for complete entities and relations
 pd.set_option('precision', 0)
 
 
