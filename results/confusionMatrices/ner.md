@@ -1,20 +1,34 @@
 **Standard Task Formulation**
-<img width="435" alt="RE Confusion Matrix Recall - Standard Task Formulation"src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/fc03f067-ac3b-4009-a290-e320f8825acd">
+<br>
+<img width="390" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/3d020baa-e3d9-4da6-b38e-d39ec8547497">
+
 
 **Start Token Requirement Only**
-![Confusion Matrix Recall scores - NER - Start Token Requirement Only](https://github.com/mtclevans/semantictextanalysis/assets/135343954/3ab259bf-45d1-4ca3-94ef-7f2b7f95fef3)
+<br>
+<img width="388" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/728721a0-3164-4491-b602-f3b0bbcf4590">
+
 
 **End Token Requirement Only**
-![Confusion Matrix Recall scores - NER - End Token Requirement Only](https://github.com/mtclevans/semantictextanalysis/assets/135343954/775e3ae4-5f65-4efb-a32b-a5031d6e1bf9)
+<br>
+<img width="388" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/d2775a7a-967f-445a-a1d9-85d8fa283256">
+
 
 **Nested Start Token - As Nested Pair**
-![Confusion Matrix actual values - NER – Nested Start Token as Nested Pair](https://github.com/mtclevans/semantictextanalysis/assets/135343954/0e613f14-d862-4741-8ea1-0bb92f45d8ec)
+<br>
+<img width="388" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/3c8678f4-4211-4943-8ee6-b43b15fa0519">
+
 
 **Nested Start Token - One of the Pair**
-![Confusion Matrix actual values - NER – Nested Start Token – One of the pair](https://github.com/mtclevans/semantictextanalysis/assets/135343954/4ddd00bc-96cf-495a-a4b9-de1f8f434114)
+<br>
+<img width="388" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/2436c2e8-9725-48a0-86ad-4610c261e246">
+
 
 **Nested End Token - As Nested Pair**
-![Confusion Matrix actual values - NER – Nested End Token as Nested Pair](https://github.com/mtclevans/semantictextanalysis/assets/135343954/5834f8ec-a109-4e65-830f-5a0e2cedd0d8)
+<br>
+<img width="388" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/693ce6b2-2f5a-47b5-b727-346bb274b256">
+
 
 **Nested End Token - One of the Pair**
-![Confusion Matrix actual values - NER – Nested End Token – One of the pair](https://github.com/mtclevans/semantictextanalysis/assets/135343954/9842c84a-309d-41b0-a413-ccf9986995e2)
+<br>
+<img width="388" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/3fef0373-6c81-4267-9090-d57d27034fd3">
+
