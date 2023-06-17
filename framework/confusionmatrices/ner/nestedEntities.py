@@ -19,7 +19,6 @@ nestedEndPred = predNer[predNer.duplicated(['end_ident'], keep=False)]
 
 
 #Start token as nested pair
-
 #Merge NER gold labels and predictions for nested start tokens using function
 #A prediction is correct if both inner and outer nested entities are predicted
 mergeDf(nestedStartGold, nestedStartPred, 'total_ident', 'Entity')
@@ -35,7 +34,6 @@ cmdNestedStartNew.plot(ax=ax)
 
 
 #End token as nested pair
-
 #Merge NER gold labels and predictions for nested end tokens using function
 #A prediction is correct if both inner and outer nested entities are predicted
 mergeDf(nestedEndGold, nestedEndPred, 'total_ident', 'Entity')
