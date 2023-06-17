@@ -1,5 +1,5 @@
 **Standard Task Formulation**
-![NER Confusion Matrix Recall - Standard Task Formulation](https://github.com/mtclevans/semantictextanalysis/assets/135343954/fc03f067-ac3b-4009-a290-e320f8825acd)
+<img width="435" alt="RE Confusion Matrix Recall - Standard Task Formulation"src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/fc03f067-ac3b-4009-a290-e320f8825acd">
 
 **Start Token Requirement Only**
 ![Confusion Matrix Recall scores - NER - Start Token Requirement Only](https://github.com/mtclevans/semantictextanalysis/assets/135343954/3ab259bf-45d1-4ca3-94ef-7f2b7f95fef3)
