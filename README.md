@@ -14,7 +14,7 @@ The following PL-Marker setup guide provides a pre-trained model and subsequent 
 **Semantic Text Analysis Framework**
 
 **Python**
-1. Import framework dependencies: pandas, NLTK
+1. Import framework dependencies: pandas, NLTK, matplotlib.pyplot, sklearn.metrics.ConfusionMatrixDisplay
 2. Import all required functions for the framework (framework/functions.py)
 3. Undertake analysis on the Scierc dataset distribution (framework/sciercanalysis)
 4. Undertaken confusion matrix analysis for ner and re (framework/confusionmatrices)
