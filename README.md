@@ -8,7 +8,10 @@ The following PL-Marker setup guide provides a pre-trained model and subsequent 
 4. Upload SciERC dataset: https://github.com/thunlp/PL-Marker#download-and-preprocess-the-datasets
   Note: Ensure the data dir matches the evaluation script: https://github.com/thunlp/PL-Marker#quick-start
 6. Ensure the Runtime type is set to GPU for consistency with the original PL-Marker experiment
-7. Use the PL-Marker QuickStart to evaluate the pre-trained PL-Marker models run_acener.py and  run_re.py for SciERC: https://github.com/thunlp/PL-Marker#quick-start
+7. Use the PL-Marker QuickStart to evaluate the pre-trained PL-Marker NER model for SciERC: https://github.com/thunlp/PL-Marker#quick-start
+   Note: Ensure you have created the output dir within the evaluation script: https://github.com/thunlp/PL-Marker#quick-start
+8. Use the PL-Marker QuickStart to evaluate the pre-trained PL-Marker RE model run_re.py for SciERC: https://github.com/thunlp/PL-Marker#quick-start
+   Note: Ensure you have created the output dir within the evaluation script: https://github.com/thunlp/PL-Marker#quick-start
 
 **Semantic Text Analysis Framework**
 
