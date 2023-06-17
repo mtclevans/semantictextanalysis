@@ -1,4 +1,4 @@
-**Standard Task Formaltion**
+**Standard Task Formulation**
 ![NER Confusion Matrix Recall - Standard Task Formulation](https://github.com/mtclevans/semantictextanalysis/assets/135343954/fc03f067-ac3b-4009-a290-e320f8825acd)
 
 **Start Token Requirement Only**
