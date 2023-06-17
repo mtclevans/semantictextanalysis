@@ -28,10 +28,10 @@
 <em>Please note: Not all Nvivo features are present on MacOS:</em><br>
 <em>1. Queries will produce different results on Mac OS as they are not filtered by user.</em><br>
 <em>2. Cluster Analysis and Pearson’s Correlation Coefficient (WindowsOS only)</em><br>
-<em>For more information see: https://help-nv.qsrinternational.com/20/mac/Content/projects-teamwork/work-with-projects-windows-mac.htm</em><br><br>
+<em>More information can be found <a href="https://help-nv.qsrinternational.com/20/mac/Content/projects-teamwork/work-with-projects-windows-mac.htm" target="_blank">here</a></em><br><br>.
 1. Import exported qdas.xlsx file into Nvivo<br>
-2. Undertake Text Analysis using the codebooks provided in framework/codebooks.md
-Note: We annotated all themes twice to generate a Kappa statistic.
+2. Undertake Semantic Text Analysis using the <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/framework/codebooks.md" target="_blank">codebooks provided</a><br>
+<em>Note: We annotated all themes twice to generate a Kappa statistic.</em>
 
 <h1>Results</h1>
 1. PL-Marker model F1 scores and standard deviation can be found in results/pl-marker.md<br>
