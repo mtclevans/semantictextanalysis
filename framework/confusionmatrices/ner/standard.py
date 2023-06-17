@@ -60,7 +60,6 @@ predNer = predNer[['start_ident', 'end_ident',
 
 #Define a list of possible unique identifiers
 #This list must be further extended in the event of a new unique identifiers
-#REMOVE STRICTREIDENT BUT CHECK NOT REQUIRED FIRST
 idents = ['total_ident', 'start_ident', 'end_ident', 'strictReIdent']
 
 
