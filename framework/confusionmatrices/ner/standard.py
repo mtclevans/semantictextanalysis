@@ -54,7 +54,8 @@ predNer = predNer[['start_ident', 'end_ident',
                             
                             
 #Evaluation Metric
-#Entity prediction: An entity is correctly predicted when both the entity boundaries and the entity type match the gold label provided by the input data
+#Entity prediction: An entity is correctly predicted when both the entity
+#boundaries and entity type match the gold label provided by the input data
 
 
 #Define a list of possible unique identifiers
