@@ -41,11 +41,13 @@ mergeDf(nestedEndGold, nestedEndPred, 'total_ident', 'Entity')
 cmNerGoldNested = goldList
 cmNerPredNested = predList
 
+
 #Display a Confusion Matrix of NER nested end tokens raw values
 cmdNestedEnd = ConfusionMatrixDisplay.from_predictions(cmNerGoldNested, 
                                                        cmNerPredNested)
 fig, ax = plt.subplots(figsize=(15,15))
 cmdNestedEnd.plot(ax=ax)
+
 
 #Display a Confusion Matrix of NER nested end token normalised values
 cmdNestedEndNorm = ConfusionMatrixDisplay.from_predictions(cmNerGoldNested,
