@@ -16,11 +16,11 @@
 
 <h2>Python</h2>
 1. Import framework dependencies: pandas, NLTK, matplotlib.pyplot, sklearn.metrics.ConfusionMatrixDisplay<br>
-2. Import all required functions for the framework (framework/functions.py)<br>
-3. Undertake analysis on the Scierc dataset distribution (framework/sciercanalysis)<br>
-4. Undertaken confusion matrix analysis for ner and re (framework/confusionmatrices)<br>
-5. Generate POS Tags for Qualitative Data Analysis Software import (framework/posTags.py)<br>
-6. Transform data and generate .xlsx for Qualitative Data Analysis Software import (framework/qdas/dataTransform.py)
+2. <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/framework/functions.py" target="_blank">Import all required functions</a> for the framework<br>
+3. Undertake analysis on the <a href="https://github.com/mtclevans/semantictextanalysis/tree/main/framework/sciercanalysis" target="_blank">Scierc dataset distribution</a><br>
+4. Undertaken <a href="https://github.com/mtclevans/semantictextanalysis/tree/main/framework/confusionmatrices" target="_blank">confusion matrix analysis</a> for ner and re<br>
+5. <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/framework/posTags.py" target="_blank">Generate POS Tags</a> for Qualitative Data Analysis Software import<br>
+6. <a href="https://github.com/mtclevans/semantictextanalysis/blob/main/framework/qdas/dataTransform.py" target="_blank">Transform data and generate .xlsx</a> for Qualitative Data Analysis Software import
 
 <h2>Semantic Text Analysis</h2>
 <em>We used Nvivio (REF) on Windows OS.</em><br>
