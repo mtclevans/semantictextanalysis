@@ -18,7 +18,7 @@ The following PL-Marker setup guide provides a pre-trained model and subsequent 
 **Python**
 1. Import framework dependencies: pandas, NLTK
 2. Import all required functions for the framework (framework/functions.py)
-3. Undertake analysis on the Scierc dataset distribution (framework/sciercanalysis): NER, RE, Sentence Analysis
+3. Undertake analysis on the Scierc dataset distribution (framework/sciercanalysis)
 4. Undertaken confusion matrix analysis for ner and re (framework/confusionmatrices)
 5. Generate POS Tags for Qualitative Data Analysis Software import (framework/posTags.py)
 6. Transform data and generate .xlsx for Qualitative Data Analysis Software import (framework/qdas/dataTransform.py)
