@@ -205,3 +205,31 @@ def posTags(data):
                               right_on='doc_key')
     column = column + 1
   return posTagDf
+
+
+#Xlsx Data Transformation
+
+
+##Define a function to transform data RE predictions into .xlsx format
+#Only partial data transformation compared to RE prediction Confusion Matrix
+#This function can be employed for any .xlsx export required using run_re.py
+def transformReXlsx (dataInput):
+  rePreds = pd.DataFrame(dataInput.stack(), columns=['relations'])
+  rePreds.reset_index(inplace=True)
+  rePreds.drop(['level_0', 'level_1'], axis=1)
+  rePreds = pd.DataFrame(rePreds['relations'].to_list(), index = rePreds.index)
+  rePreds = rePreds.merge(docKey, how='left',
+                                left_index=True, right_index=True,
+                                indicator=True, validate='1:1')
+  #Validation to ensure that all data has a docKey, then and set docKey as index
+  if 'left_only' in rePreds['_merge']:
+    raise Exception ('Misaligned document keys. Check the input data.')
+  else:
+    rePreds.set_index('doc_key', inplace=True)
+    rePreds.drop('_merge', axis=1, inplace=True)
+    rePreds = pd.DataFrame(rePreds.stack(), columns=['Relations'])
+    rePreds = pd.DataFrame(rePreds['Relations'].to_list(),
+                         index = rePreds.index,
+                         columns = ['Sentence', 'Relations_Pred'])
+    rePreds.drop('Sentence', axis=1, inplace=True)
+    return rePreds
