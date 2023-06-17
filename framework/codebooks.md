@@ -13,6 +13,9 @@
 **Level 4 - Model Improvement Theme Codebook**
 
 <img width="421" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/b7710fe7-6368-4f32-a907-175e1afeb0ae">
+
 <img width="421" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/73978e42-905e-47aa-a3dc-c0fec249625b">
+
 <img width="421" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/c767b486-4166-4282-8208-9031396b02a2">
+
 <img width="421" alt="image" src="https://github.com/mtclevans/semantictextanalysis/assets/135343954/70aa7ff1-710f-4114-a438-362a94933604">
