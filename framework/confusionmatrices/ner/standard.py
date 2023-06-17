@@ -1,5 +1,6 @@
 #Read Entity prediction file also containing gold labels into Pandas Dataframe
 try:
+  #Change directory path depending on model import and IDE employed
   %cd /content/drive/MyDrive/pl-marker-evaluation-script/pl-marker/sciner-scibert
   entPredTest = pd.read_json('ent_pred_test.json', lines=bool)
 except FileNotFoundError:
