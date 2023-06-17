@@ -1,7 +1,8 @@
 2. IMPORT FRAMEWORK DEPENDENCIES ...?
 
 **PL-Marker Evaluation Scripts**
-The following PL-Marker setup guide provides evaluation scripts: https://github.com/thunlp/PL-Marker#Setup
+The following PL-Marker setup guide provides a pre-trained model and subsequent evaluation scripts: https://github.com/thunlp/PL-Marker#Setup
+1. Import PL-Marker pre-trained model
 1. Import PL-Marker model dependencies: requirement.txt and custom Transformers file https://github.com/thunlp/PL-Marker#Install-dependencies
 3. Ensure the Scibert pre-trained model is imported according to the PL-Marker setup file: https://github.com/thunlp/PL-Marker#Trained-Models
 4. Ensure the Scierc dataset is uploaded https://github.com/thunlp/PL-Marker#download-and-preprocess-the-datasets
