@@ -1,5 +1,6 @@
 #Read in data from files SCIERC files
 try:
+  #Change directory path depending on model import and IDE employed
   %cd /content/drive/MyDrive/pl-marker-evaluation-script/pl-marker/scierc
   testData = pd.read_json('test.json', lines=bool)
   devData = pd.read_json('dev.json', lines=bool)
