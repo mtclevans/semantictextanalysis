@@ -1,5 +1,4 @@
 #Create a DataFrame with duplicated nested start tokens - gold entities
-#Print the number of nested entities
 nestedStartGold = goldNer[goldNer.duplicated(['start_ident'], keep=False)]
 print('Total Nested Start Tokens Gold Entities: ')
 print(len(nestedStartGold.index))
