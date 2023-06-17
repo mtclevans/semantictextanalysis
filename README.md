@@ -6,8 +6,9 @@ The following PL-Marker setup guide provides a pre-trained model and subsequent 
 2. Import SciBERT pre-trained model dependencies: https://github.com/thunlp/PL-Marker#training-script
 3. Import PL-Marker model dependencies: requirement.txt and custom Transformers file https://github.com/thunlp/PL-Marker#Install-dependencies
 4. Upload SciERC dataset: https://github.com/thunlp/PL-Marker#download-and-preprocess-the-datasets
-5. Ensure the Runtime type is set to GPU for consistency with the original PL-Marker experiment
-6. Use the PL-Marker QuickStart to evaluate the pre-trained PL-Marker models run_acener.py and  run_re.py for SciERC: https://github.com/thunlp/PL-Marker#quick-start
+  Note: Ensure the data dir matches the evaluation script: https://github.com/thunlp/PL-Marker#quick-start
+6. Ensure the Runtime type is set to GPU for consistency with the original PL-Marker experiment
+7. Use the PL-Marker QuickStart to evaluate the pre-trained PL-Marker models run_acener.py and  run_re.py for SciERC: https://github.com/thunlp/PL-Marker#quick-start
 
 **Semantic Text Analysis Framework**
 
