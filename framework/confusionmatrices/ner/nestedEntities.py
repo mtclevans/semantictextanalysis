@@ -25,6 +25,7 @@ mergeDf(nestedStartGold, nestedStartPred, 'total_ident', 'Entity')
 cmNerGoldNestedNewStart = goldList
 cmNerPredNestedNewStart = predList
 
+
 #Display a Confusion Matrix of NER nested start tokens raw values
 #The sample is too small to generate normalised recall evaluation
 cmdNestedStartNew = ConfusionMatrixDisplay\
