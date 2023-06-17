@@ -79,7 +79,6 @@ def mergeDf (gold, pred, ident, type):
   dfMerge = gold.merge(pred, how='left', left_on=ident, right_on=ident,
                         suffixes=('_GOLD', '_PRED'), indicator=True,
                         validate='1:1')
-  #Validation to ensure confusion matrix measures against gold labels
   if 'right_only' in dfMerge['_merge']:
     raise Exception ('Incorrect merge. Assess data merge for corrections.')
   else:
