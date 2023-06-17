@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+from sklearn.metrics import ConfusionMatrixDisplay
+
 #Read entity prediction file also containing gold labels into Pandas Dataframe
 try:
   #Change directory path depending on model import and IDE employed
@@ -95,10 +98,7 @@ def mergeDf (gold, pred, ident, type):
     predList = confusionPred[type + '_type_PRED'].values.tolist()
     predList
   return goldList, predList
-  
-  
-import matplotlib.pyplot as plt
-from sklearn.metrics import ConfusionMatrixDisplay
+
 
 #Merge NER gold labels and predictions 'using defined function
 mergeDf(goldNer, predNer, 'total_ident', 'Entity')
